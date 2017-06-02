@@ -1,0 +1,197 @@
+
+markdown: kramdown
+
+highlighter: rouge
+permalink: pretty
+url: https://morvanzhou.github.io
+baseurl:
+
+exclude: ['README.md']
+
+
+# collection and their defaults
+
+collections:
+  tutorial_page_contents:
+    output: false
+  contents:
+    output: true
+    permalink: /:path/
+
+
+
+defaults:
+  - scope:
+      path: "_contents/pages/tutorial-home-page"
+    values:
+      description: tutorial-home-page
+
+  - scope:
+      path: "_contents/pages/module-descriptions/basic-python"
+    values:
+      description: basic-python
+
+  - scope:
+      path: "_contents/pages/module-descriptions/data-manipulation"
+    values:
+      description: data-manipulation
+
+  - scope:
+      path: "_contents/pages/module-descriptions/machine-learning"
+    values:
+      description: machine-learning
+
+  - scope:
+      path: "_contents/pages/module-descriptions/others"
+    values:
+      description: others
+
+  - scope:
+      path: "_contents/tutorials"
+    values:
+      editor: Morvan
+      author: Morvan
+      author-link: "#"
+      autoplay: true
+      published: true
+      comments: true
+      sort-date: true
+
+  ### start of tutorials ###
+
+  - scope:
+      path: "_contents/tutorials/machine-learning/ML-intro"
+    values:
+      layout: tutorial-post
+      tut-title: 有趣的机器学习
+      tut-permalink: /tutorials/machine-learning/ML-intro/
+      category: ML-intro
+      tags: [机器学习, 简介]
+
+  - scope:
+      path: "_contents/tutorials/machine-learning/reinforcement-learning"
+    values:
+      layout: tutorial-post
+      tut-title: 强化学习 Reinforcement Learning
+      tut-permalink: /tutorials/machine-learning/reinforcement-learning/
+      category: reinforcement-learning
+      tags: [reinforcement learning, 强化学习, tensorflow, theano]
+
+  - scope:
+      path: "_contents/tutorials/machine-learning/keras"
+    values:
+      layout: tutorial-post
+      tut-title: Keras
+      tut-permalink: /tutorials/machine-learning/keras/
+      category: keras
+      tags: [keras, 神经网络, tensorflow, theano]
+
+  - scope:
+      path: "_contents/tutorials/machine-learning/torch"
+    values:
+      layout: tutorial-post
+      tut-title: PyTorch
+      tut-permalink: /tutorials/machine-learning/torch/
+      category: torch
+      tags: [Torch, pytorch, 神经网络]
+
+  - scope:
+      path: "_contents/tutorials/machine-learning/sklearn"
+    values:
+      layout: tutorial-post
+      tut-title: Sklearn
+      tut-permalink: /tutorials/machine-learning/sklearn/
+      category: sklearn
+      tags: [sklearn, scikit-learn, 机器学习]
+
+
+  - scope:
+      path: "_contents/tutorials/machine-learning/tensorflow"
+    values:
+      layout: tutorial-post
+      tut-title: Tensorflow
+      tut-permalink: /tutorials/machine-learning/tensorflow/
+      category: tensorflow
+      tags: [tensorflow, tensorboard, 机器学习, 神经网络]
+
+  - scope:
+      path: "_contents/tutorials/machine-learning/theano"
+    values:
+      layout: tutorial-post
+      tut-title: Theano
+      tut-permalink: /tutorials/machine-learning/theano/
+      category: theano
+      tags: [theano, 机器学习, 神经网络]
+
+  - scope:
+      path: "_contents/tutorials/data-manipulation/np-pd"
+    values:
+      layout: tutorial-post
+      tut-title: Numpy & Pandas
+      tut-permalink: /tutorials/data-manipulation/np-pd/
+      category: np-pd
+      tags: [numpy, pandas, 数据, 处理]
+
+  - scope:
+      path: "_contents/tutorials/data-manipulation/plt"
+    values:
+      layout: tutorial-post
+      tut-title: Matplotlib
+      tut-permalink: /tutorials/data-manipulation/plt/
+      category: plt
+      tags: [matplotlib, plt, 数据可视化]
+
+  - scope:
+      path: "_contents/tutorials/python-basic/basic"
+    values:
+      layout: tutorial-post
+      tut-title: Python 基础
+      tut-permalink: /tutorials/python-basic/basic/
+      category: Python 基础
+      tags: [python, 基础]
+
+  - scope:
+      path: "_contents/tutorials/python-basic/multiprocessing"
+    values:
+      layout: tutorial-post
+      tut-title: 多进程 Multiprocessing
+      tut-permalink: /tutorials/python-basic/multiprocessing/
+      category: multiprocessing
+      tags: [python, 基础, 多进程, multiprocessing]
+
+  - scope:
+      path: "_contents/tutorials/python-basic/threading"
+    values:
+      layout: tutorial-post
+      tut-title: 多线程 Threading
+      tut-permalink: /tutorials/python-basic/threading/
+      category: threading
+      tags: [python, 基础, 多线程, threading]
+
+
+  - scope:
+      path: "_contents/tutorials/python-basic/tkinter"
+    values:
+      layout: tutorial-post
+      tut-title: 窗口 Tkinter
+      tut-permalink: /tutorials/python-basic/tkinter/
+      category: tkinter
+      tags: [python, 基础, GUI, 窗口, tkinter, tk]
+
+  - scope:
+      path: "_contents/tutorials/python-basic/basic"
+    values:
+      layout: tutorial-post
+      tut-title: Python 基础
+      tut-permalink: /tutorials/python-basic/basic/
+      category: basic
+      tags: [python, 基础]
+
+  - scope:
+      path: "_contents/tutorials/others/git"
+    values:
+      layout: tutorial-post
+      tut-title: Git 版本管理
+      tut-permalink: /tutorials/others/git/
+      category: git
+      tags: [其他, git, VCS]
