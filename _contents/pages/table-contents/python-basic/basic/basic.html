@@ -1,0 +1,34 @@
+---
+layout: tutorials
+tut-title: Python 基础
+permalink: /tutorials/python-basic/basic/
+tut-permalink: /tutorials/python-basic/
+tut-category-name: basic
+tut-course-cover: /static/img/course_cover/python_basic.jpg
+tut-chapters:
+  - 安装
+  - 基本使用
+  - while 和 for 循环
+  - if 判断
+  - 定义功能
+  - 变量形式
+  - 模块安装
+  - 文件读取
+  - class 类
+  - input 输入
+  - 元组, 列表, 字典
+  - 模块
+  - 其他
+---
+
+<!-- variables for this page -->
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
+tut-chapters=page.tut-chapters
+tut-category=tut-category
+%}

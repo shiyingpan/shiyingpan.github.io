@@ -1,0 +1,84 @@
+---
+layout: tutorials
+---
+<!-- Tutorial menu button-->
+<!--{% include tutorial-side-menu.html %}-->
+
+<!-- top ads -->
+<div class="ads-container">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- video top -->
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:800px;height:90px"
+       data-ad-client="ca-pub-4601203457616636"
+       data-ad-slot="5888750508"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<!-- video section -->
+{% include embedded-video.html %}
+
+<br><br><br>
+<!-- video button ads -->
+<div class="ads-container">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- video buttom -->
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:800px;height:90px"
+       data-ad-client="ca-pub-4601203457616636"
+       data-ad-slot="7365483702"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<div class="pad-main">
+  <!-- upper page navigation -->
+  {% include prev-next-post.html %}
+
+  <hr>
+
+  <h1>{{page.title}}</h1>
+  <p style="text-align: center;">
+    {% if page.author-link != "#" %}
+      作者: <a href="{{page.author-link}}" target="_blank"><strong>{{page.author}}</strong></a> &nbsp;&nbsp;
+    {% else %}
+      作者: <strong>{{page.author}}</strong> &nbsp;&nbsp;
+    {% endif %}
+    编辑: <strong>{{page.editor}}</strong> &nbsp;&nbsp;
+  </p>
+
+  {{content}}
+
+  <p style="font-size: 0.8em; padding:4em 1em 0.5em 1em;">
+    如果你觉得这篇文章或视频对你的学习很有帮助, 请你也分享它, 让它能再次帮助到更多的需要学习的人.
+  </p>
+
+  <p style="font-size: 0.8em; padding:0em 1em 4em 1em;">
+    莫烦没有正式的经济来源, 如果你也想支持 <strong>莫烦Python</strong> 并看到更好的教学内容, 请拉倒屏幕最下方,
+    <a href="{{ site.baseurl }}/support/">赞助他一点点</a>, 作为鼓励他继续开源的动力.
+  </p>
+
+  <!-- lower page navigation -->
+  {% include prev-next-post.html %}
+</div>
+
+<div class="ads-container">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- comment top resize -->
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:800px;height:90px"
+       data-ad-client="ca-pub-4601203457616636"
+       data-ad-slot="4412017301"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+
+<div class="pad-main">
+  <!-- comment section -->
+  {% include comment-section.html %}
+</div>

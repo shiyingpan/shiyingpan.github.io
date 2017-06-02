@@ -1,0 +1,25 @@
+---
+layout: tutorials
+permalink: /tutorials/machine-learning/ML-intro/
+tut-title: 有趣的机器学习
+tut-permalink: /tutorials/machine-learning/
+tut-category-name: ML-intro
+tut-course-cover: /static/img/course_cover/ML_intro.png
+tut-chapters:
+  - 机器学习方法
+  - 神经网络
+  - 神经网络技巧
+  - 强化学习
+---
+<!-- variables for this page -->
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
+
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
+tut-chapters=page.tut-chapters
+tut-category=tut-category
+%}

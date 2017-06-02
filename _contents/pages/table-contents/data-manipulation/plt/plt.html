@@ -1,0 +1,27 @@
+---
+layout: tutorials
+permalink: /tutorials/data-manipulation/plt/
+tut-title: Matplotlib
+tut-permalink: /tutorials/data-manipulation/
+tut-category-name: plt
+tut-course-cover: /static/img/course_cover/plt.jpg
+tut-chapters:
+  - Matplotlib 简介
+  - 基本使用
+  - 画图种类
+  - 多图合并显示
+  - 动画
+---
+<!-- variables for this page -->
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
+
+
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
+tut-chapters=page.tut-chapters
+tut-category=tut-category
+%}

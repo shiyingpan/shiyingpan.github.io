@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div id="tut-header">
+  <a class="hover-move bold" href="{{site.baseurl}}{{ page.tut-permalink }}"><h1>{{ page.tut-title }}</h1></a>
+  <nav id="tut-nav">
+    <ul>
+      <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/python-basic/">
+        <img class="icon-image" src="/static/img/icon/python_icon.png">Python基础 ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="{{site.baseurl}}/tutorials/python-basic/basic/">基础</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/python-basic/multiprocessing/">多进程 multiprocessing</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/python-basic/threading/">多线程 threading</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/python-basic/tkinter/">Tkinter</a> </li>
+        </ul>
+      </li>
+      <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/machine-learning/">
+        <img class="icon-image" src="/static/img/icon/ML_icon.png">机器学习 ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="{{site.baseurl}}/tutorials/machine-learning/ML-intro/">有趣的机器学习</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/machine-learning/reinforcement-learning/">强化学习 Reinforcement Learning</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/machine-learning/tensorflow/">Tensorflow</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/machine-learning/torch/">PyTorch</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/machine-learning/theano/">Theano</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/machine-learning/keras/">Keras</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/machine-learning/sklearn/">Scikit-learn</a> </li>
+        </ul>
+      </li>
+      <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/data-manipulation/">
+        <img class="icon-image" src="/static/img/icon/data_icon.png">数据处理 ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="{{site.baseurl}}/tutorials/data-manipulation/np-pd/">Numpy & Pandas</a> </li>
+          <li><a href="{{site.baseurl}}/tutorials/data-manipulation/plt/">Matplotlib</a> </li>
+        </ul>
+      </li>
+      <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/others/">
+        <img class="icon-image" src="/static/img/icon/others_icon.png">其他 ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="{{site.baseurl}}/tutorials/others/git/">Git 版本管理</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+
+
+
+<div id="tut-content">
+{{content}}
+</div>
